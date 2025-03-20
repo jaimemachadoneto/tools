@@ -1,0 +1,19 @@
+[project]
+name = "click-example-jmntool"
+version = "1.0.0"
+description = "Click jmntool example"
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.1",
+    "GitPython>=3.1.18"
+]
+
+[project.scripts]
+jmntool = "jmntool.cli:cli"
+
+[build-system]
+requires = ["flit_core<4", "GitPython"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.module]
+name = "jmntool"
